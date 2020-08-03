@@ -11,7 +11,7 @@ import io
 
 import pynmea2
 import serial
-from gps_stuff.msg import GPS
+from gps_comm.msg import GPS
 
 def talker():
     pub = rospy.Publisher('gps', GPS, queue_size=10) #initialize publisher
