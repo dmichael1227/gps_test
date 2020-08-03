@@ -8,7 +8,7 @@
 ## to the 'chatter' topic
 
 import rospy
-from gps_stuff.msg import GPS
+from gps_comm.msg import GPS
 
 def callback(data):
     rospy.loginfo(rospy.get_caller_id() + 'Lat: %s Lon %s',
