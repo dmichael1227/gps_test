@@ -11,8 +11,7 @@ import rospy
 from gps_comm.msg import GPS
 
 def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + 'Lat: %s Lon %s',
-                  round(data.Lat,4),round(data.Lon,4))
+    rospy.loginfo('Lat: %s Lon %s', round(data.Lat,4),round(data.Lon,4))
 
 def listener():
 
